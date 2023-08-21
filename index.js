@@ -67,10 +67,10 @@ $(document).click(function() {
 
 boxes.click(function(){
     if(!running && started){ 
-        running = true;
         const colNum = this.classList[0].substr(-1); //getting col no.
         const occupiedBoxes = columnStatus[colNum-1];
         if( occupiedBoxes < 6){
+            running = true;
             const selectedCol = $(".col" + colNum);
             let pos = 0;
             let loop = setInterval(coinDrop, 250); 
