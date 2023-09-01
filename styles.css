@@ -55,7 +55,7 @@ h1{
 
 @media(orientation:portrait){
     body{
-        height:100vh;
+        height:95vh;
         justify-content: space-around;
     }
     h1{
